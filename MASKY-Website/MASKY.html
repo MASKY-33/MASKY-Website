@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MASKY - Uw betrouwbare backend partner voor schaalbare architecturen">
+    <meta name="author" content="MASKY">
+
+    <title>MASKY. Your Backend Partner!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="MASKY.css">
+  </head>
+
+  <body>
+
+    <!-- Navbar & Navbar-logo -->
+     
+    <nav class="navbar" id="mainNavbar">
+        <!-- 1. Het Logo -->
+        <div class="navbar-logo">
+            <a href="#home">
+                <img src="logo.png" alt="Businesslogo">
+            </a>
+        </div>
+
+        <!-- Het Hamburger Icoon (Alleen zichtbaar op mobiel) -->
+        <div class="menu-toggle" id="mobileMenuTrigger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <!-- 2. De Navigatielinks & 3. De Contactknop verpakt in één menu-container -->
+        <div class="navbar-menu" id="navbarMenu">
+            <ul class="navbar-links">
+                <li><a href="#home" data-i18n="navHome">Home</a></li>
+                <li><a href="#expertise" data-i18n="navExpertise">My Expertise</a></li>
+                <li><a href="#about" data-i18n="navAbout">Who am I?</a></li>
+            </ul>
+            
+            <!-- De foto voor in het mobiele menu -->
+            <img src="jouw-burger-foto.jpg" alt="MASKY Mobile Menu" class="burger-profile-img">
+            
+            <!-- 3. De Contactknop -->
+            <div class="navbar-button">
+                <a href="#contact" class="btn-contact" data-i18n="partnering">Partnering</a>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Section one: Header-section -->
+    
+    <header class="hero-container" id="home">
+        <!-- Jouw achtergrondafbeelding (Zonder static/) -->
+        <img src="MASKY-header-img.jpg" alt="MASKY background image" class="header-bg">
+
+        <!-- 1. DE DESKTOP SCHAKELAAR -->
+        <div class="lang-switcher desktop-lang">
+            <button onclick="switchLanguage('en')" class="lang-btn active" id="btn-en">EN</button>
+            <span class="lang-divider">|</span>
+            <button onclick="switchLanguage('nl')" class="lang-btn" id="btn-nl">NL</button>
+        </div>
+
+        <!-- De teksten in het midden -->
+        <div class="header-content">
+            <!-- 2. DE MOBIELE SCHAKELAAR -->
+            <div class="lang-switcher mobile-lang">
+                <button onclick="switchLanguage('en')" class="lang-btn active" id="btn-en-mob">EN</button>
+                <span class="lang-divider">|</span>
+                <button onclick="switchLanguage('nl')" class="lang-btn" id="btn-nl-mob">NL</button>
+            </div>
+
+            <h1>MASKY</h1>
+            <p data-i18n="heroSub">
+                Your Python Backend Engineer for <span class="business-text">growing businesses (KMO's)</span>, focused on<br>
+                <span class="usp-accent">Project-Based-Pricing</span>
+            </p>
+        </div>
+    </header>
+
+
+
+    
+    <!-- SECTION two: My Expertise -->
+    
+    <section class="expertise-container" id="expertise">
+        <!-- Bovenste deel: Jouw profielfoto & Titel -->
+        <div class="expertise-profile">
+            <img src="jouw-profielfoto.jpg" alt="MASKY - Python Backend Engineer" class="profile-img">
+            <h2 data-i18n="expTitle">My Expertise</h2>
+        </div>
+        
+        <!-- Onderste deel: De projectenrij -->
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <a href="https://jouw-swagger-url-1.com" target="_blank" class="project-link swagger-link">Swagger API UI</a>
+                <div class="arrow arrow-down">↓</div>
+                <div class="code-image-container">
+                    <img src="code-screenshot-1.jpg" alt="Backend Code Screenshot" class="code-img">
+                </div>
+                <div class="arrow arrow-up">↑</div>
+                <a href="https://github.com" target="_blank" class="project-link github-link">GitHub Repo</a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <a href="https://jouw-swagger-url-2.com" target="_blank" class="project-link swagger-link">Swagger API UI</a>
+                <div class="arrow arrow-down">↓</div>
+                <div class="code-image-container">
+                    <img src="code-screenshot-2.jpg" alt="Backend Code Screenshot" class="code-img">
+                </div>
+                <div class="arrow arrow-up">↑</div>
+                <a href="https://github.com" target="_blank" class="project-link github-link">GitHub Repo</a>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <a href="https://jouw-swagger-url-3.com" target="_blank" class="project-link swagger-link">Swagger API UI</a>
+                <div class="arrow arrow-down">↓</div>
+                <div class="code-image-container">
+                    <img src="code-screenshot-3.jpg" alt="Backend Code Screenshot" class="code-img">
+                </div>
+                <div class="arrow arrow-up">↑</div>
+                <a href="https://github.com" target="_blank" class="project-link github-link">GitHub Repo</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    
+    <!-- Section three: Who am I? -->
+
+    <section class="about-container" id="about">
+        <div class="about-content-wrapper">
+            <!-- Linkerkant: De no-nonsense tekst met jouw belofte en knop -->
+            <div class="about-text-column">
+                <h2 data-i18n="aboutTitle">Who am I?</h2>
+                <p class="about-lead" data-i18n="aboutLead">
+                    I am MASKY. A Python Backend Engineer built for <span class="lead-highlight">scalable architectures</span> and <span class="lead-highlight">secure systems</span>.
+                </p>
+                <p class="about-pricing" data-i18n="aboutPricing">
+                    I focus on <span class="price-highlight">Project-Based Pricing</span>, ensuring you have a clear understanding of the budget before we start.
+                </p>
+                <p class="about-statement" data-i18n="aboutStatement">
+                    I can talk all about myself, but I don't want to hold you too long on here. We are here for action, not words. We cannot let your clients wait too long!
+                </p>
+                <p class="about-promise" data-i18n="aboutPromise">
+                    I respect your time, as if it is mine. I respond <span class="time-accent">within 5 hours</span>.
+                </p>
+                <div class="about-action-button">
+                    <a href="#contact" class="btn-contact" data-i18n="partnering">Partnering</a>
+                </div>
+            </div>
+            
+            <!-- Rechterkant: Jouw verticale (anonieme) profielfoto -->
+            <div class="about-image-column">
+                <img src="jouw-verticale-foto-3.jpg" alt="MASKY - Backend Engineer" class="about-profile-img">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-- Section four: Contact -->
+    
+    <section class="contact-container" id="contact">
+        <div class="contact-wrapper" style="text-align: center; color: #1a1a1a; max-width: 600px; margin: 0 auto;">
+            
+            <!-- E-mail Gedeelte -->
+            <div style="margin-bottom: 40px;">
+                <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 15px;">Email</h3>
+                <a href="mailto:masky.somebody33@gmail.com" class="btn-contact" style="display: inline-block; font-size: 18px; margin-bottom: 15px;">
+                    masky.somebody33@gmail.com
+                </a>
+                <p style="font-size: 16px; color: #555; line-height: 1.6; margin-top: 15px;" data-i18n="contactEmailText">
+                    <!-- Dit wordt via JavaScript vertaald -->
+                </p>
+            </div>
+
+            <!-- Ruimte / Scheidingslijn ertussen -->
+            <hr style="border: 0; height: 1px; background: #e1e1e1; margin: 40px auto; width: 50%;">
+
+            <!-- Telefoon Gedeelte -->
+            <div>
+                <p style="font-size: 18px; font-weight: 600; margin-bottom: 20px;" data-i18n="contactPhoneText">
+                    <!-- Dit wordt via JavaScript vertaald -->
+                </p>
+                <a href="tel:+32474221483" class="btn-contact" style="display: inline-block; background-color: #28a745; font-size: 18px;">
+                    +32 474 22 14 83
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<script>
+    // 1. Vertaalwoordenboek (EN & NL)
+    const translations = {
+        en: {
+            navHome: "Home",
+            navExpertise: "My Expertise",
+            navAbout: "Who am I?",
+            partnering: "Partnering",
+            heroTitle: "MASKY",
+            heroSub: 'Your Python Backend Engineer for <span class="business-text">growing businesses (KMO\'s)</span>, focused on<br><span class="usp-accent">Project-Based-Pricing</span>',
+            expTitle: "My Expertise",
+            aboutTitle: "Who am I?",
+            aboutLead: 'I am MASKY. A Python Backend Engineer built for <span class="lead-highlight">scalable architectures</span> and <span class="lead-highlight">secure systems</span>.',
+            aboutPricing: 'I focus on <span class="price-highlight">Project-Based Pricing</span>, ensuring you have a clear understanding of the budget before we start.',
+            aboutStatement: "I can talk all about myself, but I don't want to hold you too long on here. We are here for action, not words. We cannot let your clients wait too long!",
+            aboutPromise: 'I respect your time, as if it is mine. I respond <span class="time-accent">within 5 hours</span>.',
+            contactEmailText: 'In the email, give me some info briefly:<br><strong>Name:</strong><br><strong>Phone:</strong><br><strong>Who are your most frequent customers?</strong> (Gives me some clarification, insight, and preparation for our upcoming conversation.)',
+            contactPhoneText: 'Would you rather call? Feel free to call me for a brief conversation:'
+        },
+        nl: {
+            navHome: "Start",
+            navExpertise: "Mijn Expertise",
+            navAbout: "Wie ben ik?",
+            partnering: "Samenwerken",
+            heroTitle: "MASKY",
+            heroSub: 'Jouw Python Backend Engineer voor <span class="business-text">groeiende bedrijven (KMO\'s)</span>, gefocust op<br><span class="usp-accent">Vaste Projectprijzen</span>',
+            expTitle: "Mijn Expertise",
+            aboutTitle: "Wie ben ik?",
+            aboutLead: 'Ik ben MASKY. Een Python Backend Engineer gebouwd voor <span class="lead-highlight">schaalbare architecturen</span> en <span class="lead-highlight">veilige systemen</span>.',
+            aboutPricing: 'Ik focus op <span class="price-highlight">vaste projectprijzen</span>, zodat je vooraf precies weet wat het budget is.',
+            aboutStatement: "Ik kan lang en breed over mezelf praten, maar ik wil je niet te lang ophouden. We zijn hier voor actie, geen woorden. We kunnen je klanten niet te lang laten wachten!",
+            aboutPromise: 'Ik respecteer jouw tijd, alsof het die van mij is. Ik reageer <span class="time-accent">binnen 5 uur</span>.',
+            contactEmailText: 'Geef me in de e-mail in het kort wat info:<br><strong>Naam:</strong><br><strong>Tel:</strong><br><strong>Wie zijn uw meest voorkomende klanten?</strong> (Geeft me wat verduidelijking, inzicht en voorbereiding op ons aankomend gesprek.)',
+            contactPhoneText: 'Wil je liever bellen? Bel me gerust voor een kort gesprek:'
+        }
+    };
+
+    // 2. Functie om taal te wisselen
+    function switchLanguage(lang) {
+        localStorage.setItem('preferredLanguage', lang);
+        
+        // Zet de actieve klasse goed voor zowel desktop als mobiele knoppen
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            if (btn.id.includes(lang)) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
+            }
+        });
+    }
+
+    // Laad opgeslagen taal bij opstarten
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        switchLanguage(savedLang);
+    });
+
+    // Selectie van navigatie-elementen
+    const navbar = document.getElementById('mainNavbar');
+    const mobileMenuTrigger = document.getElementById('mobileMenuTrigger');
+    const navbarMenu = document.getElementById('navbarMenu');
+    const menuLinks = document.querySelectorAll('.navbar-links a, .navbar-menu .btn-contact');
+    
+    // 1. Meet het scrollen voor het glassmorphism effect
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    
+    // 2. Open en sluit het menu bij klik op de hamburger
+    mobileMenuTrigger.addEventListener('click', function() {
+        mobileMenuTrigger.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
+    });
+    
+    // 3. Sluit het menu automatisch zodra je op een link klikt
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenuTrigger.classList.remove('active');
+            navbarMenu.classList.remove('active');
+        });
+    });
+
+    // 4. Verander hamburgerkleur naar zwart zodra we op de witte contact-sectie zijn
+    const contactSection = document.getElementById('contact');
+
+    const contactObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navbar.classList.add('dark-menu'); // Voegt klasse toe -> CSS maakt streepjes zwart
+            } else {
+                navbar.classList.remove('dark-menu'); // Verwijdert klasse -> streepjes worden weer wit
+            }
+        });
+    }, {
+        threshold: 0.2 // Wisselt zodra 20% van de contactlaag in beeld schuift
+    });
+
+    if (contactSection) {
+        contactObserver.observe(contactSection);
+    }
+</script>
+</body>
+</html>
